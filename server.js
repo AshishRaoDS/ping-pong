@@ -13,6 +13,6 @@ const io = require("socket.io")(server, {
 const PORT = 3000
 
 server.listen(PORT)
-console.log('Listening to port 8000')
+console.log(`Listening to port ${PORT}`)
 
 sockets.listen(io)
