@@ -3,7 +3,12 @@ FROM node:16-alpine
 WORKDIR /app
 
 COPY  package*.json ./
-RUN npm run install
+
+COPY public/ public/
+
+COPY server/ server/
+
+RUN npm install 
 
 USER node 
 
